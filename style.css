@@ -1,0 +1,109 @@
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.quiz-container {
+  width: 80%;
+  margin: 40px auto;
+  background-color: #f8d4c5;
+  padding: 20px;
+  border: 1px solid #725c53;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  margin-bottom: 20px;
+  font-size: 50px;
+  color: #333333;
+}
+
+#question {
+  margin-bottom: 20px;
+}
+
+.question {
+  font-size: 30px;
+}
+
+#options {
+  display: grid;
+  gap: 10px;
+  grid-template-columns: repeat(2, 1fr);
+}
+.options {
+  font-size: 24px;
+}
+
+button {
+  display: block;
+  margin: 0 auto;
+  background-color: rgb(227, 238, 10, 245, 161);
+  padding: 10px 20px;
+  color: #131313;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+button.correct {
+  background-color: #28a745;
+}
+
+button.incorrect {
+  background-color: #dc3545;
+}
+
+#result {
+  margin-top: 20px;
+  font-size: 1.2em;
+  color: #333333;
+  height: 30px; /* To reserve space for the message without shifting elements */
+}
+
+/* Responsive design for tablets and mobile */
+@media (max-width: 768px) {
+  .quiz-container {
+    padding: 20px;
+  }
+
+  #question {
+    font-size: 1.2em;
+  }
+
+  button {
+    padding: 12px;
+    font-size: 1em;
+  }
+}
+
+@media (max-width: 480px) {
+  .quiz-container {
+    padding: 15px;
+  }
+
+  h1 {
+    font-size: 1.8em;
+  }
+
+  #question {
+    font-size: 1.1em;
+  }
+
+  button {
+    padding: 10px;
+    font-size: 0.9em;
+  }
+}
